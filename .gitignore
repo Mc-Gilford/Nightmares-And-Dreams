@@ -1,15 +1,14 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-MemoryCaptures/
-Recordings/
-.vs/
-.idea/
+My Project/[Ll]ibrary/
+My Project/[Tt]emp/
+My Project/[Oo]bj/
+My Project/[Bb]uild/
+My Project/[Bb]uilds/
+My Project/[Ll]ogs/
+My Project/[Uu]ser[Ss]ettings/
+My Project/MemoryCaptures/
+My Project/Recordings/
 
-*.csproj
-*.sln
-*.user
+My Project/*.csproj
+My Project/*.sln
+My Project/*.user
+My Project/*.userprefs
