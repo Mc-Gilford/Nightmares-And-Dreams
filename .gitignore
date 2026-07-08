@@ -5,6 +5,11 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+MemoryCaptures/
+Recordings/
 .vs/
+.idea/
+
 *.csproj
 *.sln
+*.user
