@@ -15,6 +15,7 @@ public class MovementPlayer : MonoBehaviour
     public float speed = 15.0f;
     public float rotationSpeed = 12.0f;
     public bool isOnGround=true;
+    public Lamp lamp;
 
     private void Awake() {
         controls = new InputSystem_Actions();
@@ -26,6 +27,7 @@ public class MovementPlayer : MonoBehaviour
     private void Start()
     {
         playerRb.centerOfMass = transform.InverseTransformPoint(centerOfMass.transform.position);
+        lamp = GameObject.Find("Lamp").GetComponent<Lamp>();
     }
 
     // Update is called once per frame
@@ -61,6 +63,11 @@ public class MovementPlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+        }
+        if(other.gameObject.CompareTag("Collectible"))
+        {
+            Debug.Log("Incrementar");
+            lamp.chargeLamp(5);
         }
     }
 }
